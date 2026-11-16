@@ -1,5 +1,5 @@
 // Codex · service worker : l'appli s'ouvre même sans réseau, et se met à jour dès qu'il revient
-const V = 'codex-202611160748';
+const V = 'codex-202611161952';
 const SHELL = ['./', 'index.html', 'app.js', 'boot.js', 'config.js', 'manifest.webmanifest', 'confidentialite.html',
   './icon-192.png', './icon-512.png', './maskable-512.png', './apple-touch-icon.png', './favicon-32.png'];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(V).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting())); });
